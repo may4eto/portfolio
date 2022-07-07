@@ -1,0 +1,15 @@
+:root {
+  /* colors */
+  --text-color-black: #4f4f4f;
+  --text-color-grey: #828282;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color-black);
+  max-width: 1024px;
+  margin: 40px auto;
+  background-color: antiquewhite;
+}
