@@ -2,6 +2,7 @@
   /* colors */
   --text-color-black: #4f4f4f;
   --text-color-grey: #828282;
+  --light-grey: #c4c4c4;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -11,5 +12,20 @@ body {
   color: var(--text-color-black);
   max-width: 1024px;
   margin: 40px auto;
-  background-color: antiquewhite;
+  background-color: gainsboro;
+}
+
+.card {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: min-content;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
 }
