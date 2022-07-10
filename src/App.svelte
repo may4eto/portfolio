@@ -4,7 +4,10 @@
   import HobbiesCard from './lib/HobbiesCard.svelte'
   import ExperienceCard from './lib/ExperienceCard.svelte'
   import BlogCard from './lib/BlogCard.svelte'    
+  import ProjectsCard from './lib/ProjectsCard.svelte';
+  import ProjectGrid from './lib/ProjectGrid.svelte';
   import { onMount } from "svelte";
+import Footer from './lib/Footer.svelte'
   let blogData = []
   onMount(async () => {
         const response = await fetch(
@@ -45,26 +48,36 @@
       { name: "Dancing", description: "I enjoy social dancing, in particular tango, balboa and swing.", image: "tango.jpg"}
     ],
     experiences: [
-      { dates: "2021-current", role: "Front-end developer", description: "Development of web applications with Angular", image: "avanade.png" },
-      { dates: "2020", role: "Full-stack developer", description: "Development of web applications with Laravel and MySQL", image: "nowhere.png" },
-      { dates: "2020", role: "Web designer", description: "Graphic and web design work in Adobe XD and Adobe Illustrator", image: "2create.png" },
-      { dates: "2013-2019", role: "Assistant", description: "Various administrative, paralegal and policy support roles", image: "eu.png" },
+      { dates: "2021-current", role: "Front-end developer", description: "Development of a web application with Angular", image: "avanade.png" },
+      { dates: "2020", role: "Full-stack developer", description: "Development of a web application for a small retail client with Laravel and MySQL", image: "nowhere.png" },
+      { dates: "2020", role: "Web designer", description: "Graphic and web design work in Adobe XD and Adobe Illustrator for various clients", image: "2create.png" },
+      { dates: "2013-2019", role: "Assistant", description: "Various administrative, paralegal and policy support roles at EU institutions and agencies", image: "eu.png" },
       // { dates: "2010-2013", role: "Project coordinator", description: "Funding and capacity building for NGOs", image: "osf.png" }
+    ],
+    projects: [
+      { name: "Book Club", image: "bookclub.png", url: "https://book-club-app.netlify.app", repo: "https://github.com/may4eto/book-club", description: "A responsive website fetching data from an external API and using React hooks and the styled-components library.", tags: ["React", "HTML", "CSS"] },
+      { name: "Zesty", image: "zesty.png", url: "https://zesty.netlify.app", repo: "https://codesandbox.io/s/zesty-t0dqh", description: "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and vanilla CSS.", tags: ["React", "HTML", "CSS"] },  
+      { name: "MilkyMood", image: "milkymood.png", url: "https://milkymood.netlify.app", repo: "https://codesandbox.io/s/milkymood-p03jo", description: "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ", tags: ["React", "HTML", "CSS"] },
+
     ]
   }
 </script>
 
 {#if blogData}
   <main>
-    <ProfileCard data={data} />
+    <ProfileCard {data} />
     <div class="intro">
-      <SkillsCard data={data} />
-      <BlogCard blogData={blogData} />
-      <HobbiesCard data={data} />
-      <ExperienceCard data={data} />
+      <SkillsCard {data} />
+      <BlogCard {blogData} />
+      <HobbiesCard {data} />
+      <ExperienceCard {data} />
     </div>
-    <div class="projects"></div>
+    <div class="projects">
+      <ProjectsCard {data} />
+      <ProjectGrid {data} />
+    </div>
   </main>
+  <Footer />
 {:else}
   ...loading
 {/if}
@@ -75,5 +88,6 @@
     grid-template-columns: 40fr 60fr;
     gap: 24px;
     margin: 24px 0;
+    align-items: start;
   }
 </style>

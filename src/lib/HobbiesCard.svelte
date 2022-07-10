@@ -17,7 +17,7 @@
 
 <style>
     .card {
-        transform: translateY(-22%);
+        margin-top: -50%;
     }
     .card h3 {
         font-size: 18px;
