@@ -66,4 +66,8 @@
     .pagination :global(.option.next svg path){
         fill: var(--text-color-black);
     } 
+    .pagination :global(.option.prev.disabled svg path),
+    .pagination :global(.option.next.disabled svg path){
+        fill: var(--text-color-grey);
+    } 
 </style>
