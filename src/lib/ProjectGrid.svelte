@@ -46,15 +46,15 @@
     .pagination :global(.option) {
         display: inline-block;
         vertical-align: middle;
-        color: var(--text-color-grey);
+        color: var(--text-color-black);
     }
     .pagination :global(.option.active) {
-        background-color: var(--text-color-grey);
-        border: 1px solid var(--text-color-grey);
+        background-color: var(--text-color-black);
+        border: 1px solid var(--text-color-black);
         color: #fff;
     }
     .pagination :global(.option.number) {
-        border: 1px solid var(--text-color-grey);
+        border: 1px solid var(--text-color-black);
         padding: 4px 8px;
         border-radius: 4px;
         font-variant-numeric: tabular-nums;
@@ -62,7 +62,8 @@
     .pagination :global(.option.number:not(:first-child)) {
         margin-left: 8px;
     }
-    .pagination :global(.option svg path) {
+    .pagination :global(.option.prev svg path),
+    .pagination :global(.option.next svg path){
         fill: var(--text-color-black);
     } 
 </style>
