@@ -83,6 +83,7 @@ import Footer from './lib/Footer.svelte'
 {/if}
 
 <style>
+  @import '../src/assets/global.css';
   div.intro {
     display: grid;
     grid-template-columns: 40fr 60fr;

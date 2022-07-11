@@ -1,15 +1,13 @@
 <script>
     export let data
     const projectTags = data.projects.map(project => project.tags.toString()).toString().split(",")
-    console.log(projectTags)
-    const distinctTags = [...new Set(projectTags)]
-    console.log(distinctTags)
+    const uniqueTags = [...new Set(projectTags)]
 </script>
 <div class="card">
     <h2>
         Projects ( {data.projects.length} )
     </h2>
-    {#each distinctTags as tag}  
+    {#each uniqueTags as tag}  
         <span>
             {tag}
         </span>
