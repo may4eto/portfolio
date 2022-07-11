@@ -44,9 +44,8 @@
         box-sizing: border-box;
     }
     .pagination :global(.option) {
-        display: inline-block;
-        vertical-align: middle;
         color: var(--text-color-black);
+        padding: 8px;
     }
     .pagination :global(.option.active) {
         background-color: var(--text-color-black);
@@ -55,12 +54,9 @@
     }
     .pagination :global(.option.number) {
         border: 1px solid var(--text-color-black);
-        padding: 4px 8px;
         border-radius: 4px;
         font-variant-numeric: tabular-nums;
-    }
-    .pagination :global(.option.number:not(:first-child)) {
-        margin-left: 8px;
+        margin: 0 4px;
     }
     .pagination :global(.option.prev svg path),
     .pagination :global(.option.next svg path){
