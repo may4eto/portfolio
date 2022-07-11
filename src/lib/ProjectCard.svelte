@@ -12,7 +12,7 @@
             {/each}
     </div>
     <h3>{project.name}</h3>
-    <p>{project.description}</p>
+    <p>{@html project.description}</p>
     <div class="links">
         <a href="{project.url}" target="_blank">Demo</a>
         <a href="{project.repo}" target="_blank">Code</a>
