@@ -43,4 +43,36 @@
         color: var(--text-color-grey);
         font-size: 16px;
     }
+    @media (max-width: 1024px) {
+        .card {
+            margin-top: -52%;
+        }
+    }
+    @media (max-width: 1007px) {
+        .card .card-grid {
+            padding-bottom: 24px;
+        }
+    }
+    @media (max-width: 986px) {
+        .card {
+            margin-top: -33%;
+        }
+        .card .card-grid {
+            padding-bottom: 48px;
+        }
+    }
+    @media (max-width: 986px) {
+        .card {
+            margin-top: 0%;
+        }
+        .card .card-grid {
+            padding-bottom: 24px;
+        }
+    }
+    @media(max-width: 950px) {
+        .card .card-grid .hobby-card .img {
+            width: 100%;
+            height: 280px;
+        }
+    }
 </style>

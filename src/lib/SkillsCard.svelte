@@ -22,7 +22,7 @@
     }
     .card .skill .bar {
         height: 12px;
-        width: 250px;
+        width: 66%;
         background-color: var(--light-grey);
         border-radius: 12px;
     }
@@ -31,4 +31,5 @@
         height: 100%;
         border-radius: 12px;
     }
+   
 </style>

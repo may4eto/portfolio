@@ -3,7 +3,9 @@
 </script>
 
 <div class="card profile">
-    <img src="images/profile-image.jpg" alt="" />
+    <figure>
+        <img src="images/profile-image.jpg" alt="" />
+    </figure>
     <div class="text">
         <div class="header">
             <div class="name">
@@ -44,11 +46,14 @@
         flex-direction: row;
         max-width: 1024px;
     }
+    .card figure {
+        margin: 0;
+    }
     .card .text .header {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
     }
     .card .text .header .name h1 {
         margin: 0;
@@ -81,5 +86,47 @@
         height: auto;
         margin-right: 24px;
         border-radius: 12px;
+    }
+    @media (max-width: 1024px) {
+        .card .text .social {
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 986px) {
+        .card .text {
+            font-size: 16px;
+        }
+        .card .text .header {
+            margin-bottom: 24px;
+        }
+    }
+    @media (max-width: 972px) {
+        .card .text .social {
+            margin-top: 24px;
+        }
+    }
+    @media(max-width: 950px) {
+        .card .text .header {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 24px;
+        }
+        .card figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media(max-width: 835px) {
+        .card {
+            flex-direction: column;
+        }
+        .card figure {
+            margin-bottom: 24px;
+        }
+        .card figure img {
+            margin-right: 0;
+            width: 100%;
+        }
     }
 </style>

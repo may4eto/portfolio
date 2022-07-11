@@ -53,4 +53,10 @@
         color: #fff;
         background-color: var(--text-color-black);
     }
+    @media(max-width: 950px) {
+        .card img {
+        height: auto;
+        width: 100%;
+        }
+    }
 </style>

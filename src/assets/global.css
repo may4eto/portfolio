@@ -29,3 +29,41 @@ body {
   margin-top: 0;
   font-size: 24px;
 }
+
+@media (max-width: 1024px) {
+  body {
+    padding: 24px;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 985px) {
+  body {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+@media (max-width: 950px) {
+  body {
+    padding: 40px 80px;
+  }
+  .card {
+    padding: 40px;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    padding: 40px;
+  }
+  .card {
+    padding: 24px;
+  }
+}
+@media (max-width: 412px) {
+  body {
+    padding: 24px;
+  }
+  .card {
+    padding: 16px;
+  }
+}

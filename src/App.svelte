@@ -56,7 +56,7 @@ import Footer from './lib/Footer.svelte'
     ],
     projects: [
       { name: "Book Club", image: "bookclub.png", url: "https://book-club-app.netlify.app", repo: "https://github.com/may4eto/book-club", description: "A responsive website fetching data from an external API and using React hooks and the styled-components library.", tags: ["React", "HTML", "CSS"] },
-      { name: "Zesty", image: "zesty.png", url: "https://zesty.netlify.app", repo: "https://codesandbox.io/s/zesty-t0dqh", description: "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and vanilla CSS.", tags: ["React", "HTML", "CSS"] },  
+      { name: "Zesty", image: "zesty.png", url: "https://zesty.netlify.app", repo: "https://codesandbox.io/s/zesty-t0dqh", description: "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS.", tags: ["React", "HTML", "CSS"] },  
       { name: "MilkyMood", image: "milkymood.png", url: "https://milkymood.netlify.app", repo: "https://codesandbox.io/s/milkymood-p03jo", description: "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ", tags: ["React", "HTML", "CSS"] },
       { name: "Edie", image: "edie.png", url: "https://may4eto.github.io/edie-homepage/", repo: "https://github.com/may4eto/edie-homepage", description: "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid.", tags: ["HTML", "CSS"] },
       { name: "Fitra", image: "fitra.png", url: "https://maya-mircheva-superhi-project-1.myshopify.com/", repo: "https://github.com/may4eto/fitra", description: "*DEMO STORE, NO ORDERS - password: superhi* <br> A single-page Shopify custom theme", tags: ["Shopify", "CSS"] },
@@ -92,5 +92,21 @@ import Footer from './lib/Footer.svelte'
     gap: 24px;
     margin: 24px 0;
     align-items: start;
+  }
+  @media (max-width: 1024px) {
+    div.intro {
+      gap: 16px;
+    }
+  }
+  @media (max-width: 986px) {
+    div.intro {
+      grid-template-columns: 50fr 50fr;
+    }
+  }
+  @media (max-width: 950px) {
+    div.intro {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
   }
 </style>

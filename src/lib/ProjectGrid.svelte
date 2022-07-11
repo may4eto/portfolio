@@ -66,4 +66,15 @@
     .pagination :global(.option.next.disabled svg path){
         fill: var(--text-color-grey);
     } 
+    @media (max-width: 1024px) {
+        .projects-grid {
+            gap: 16px;
+        }
+    }
+    @media(max-width:950px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
 </style>
