@@ -34,4 +34,9 @@
         display: flex;
         flex-wrap: wrap;
     }
+    @media (max-width: 375px) {
+        .card {
+            margin-bottom: 16px;
+        }
+}
 </style>

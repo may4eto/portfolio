@@ -112,6 +112,7 @@ import Footer from './lib/Footer.svelte'
   @media (max-width: 375px) {
     div.intro {
       gap: 16px;
+      margin: 16px 0;
     }
   }
 </style>
