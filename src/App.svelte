@@ -109,7 +109,7 @@ import Footer from './lib/Footer.svelte'
       gap: 24px;
     }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 375px) {
     div.intro {
       gap: 16px;
     }

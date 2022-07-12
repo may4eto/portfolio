@@ -77,4 +77,9 @@
             gap: 24px;
         }
     }
+    @media (max-width: 375px) {
+        .projects-grid {
+            gap: 16px;
+        }
+    }
 </style>
