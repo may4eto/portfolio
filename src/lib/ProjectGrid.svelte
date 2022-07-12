@@ -2,7 +2,8 @@
     import { paginate, LightPaginationNav } from 'svelte-paginate'
     import ProjectCard from './ProjectCard.svelte' 
     export let data
-    let items = [...data.projects]
+    export let filteredProjects
+    let items = filteredProjects.length > 0 ? [...filteredProjects] : [...data.projects]
     let currentPage = 1
     let pageSize = 3
     $: paginatedItems = paginate({ items, pageSize, currentPage })

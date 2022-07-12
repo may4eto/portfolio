@@ -1,15 +1,27 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
     export let data
-    const projectTags = data.projects.map(project => project.tags.toString()).toString().split(",")
+    export let filteredProjects
+    const dispatch = createEventDispatcher();
+    const projectTags = data.projects.map(project => project.tags.toString()).toString().split(",").sort()
     const uniqueTags = [...new Set(projectTags)]
+    let onFilterProjects = (event) => {
+        dispatch('filter', {
+			text: event.target.innerHTML
+		});
+    }
 </script>
 <div class="card">
     <h2>
-        Projects ( {data.projects.length} )
+        {#if filteredProjects.length > 0}
+            Projects ( {filteredProjects.length} )
+        {:else}
+            Projects ( {data.projects.length} )
+        {/if}
     </h2>
     <div class="tags">
         {#each uniqueTags as tag}  
-            <span>
+            <span on:click = {onFilterProjects} >
                 {tag}
             </span>
         {/each}
@@ -29,6 +41,11 @@
         border-radius: 12px;
         margin: 8px 8px 0 0;
         display: inline-block;
+        cursor: pointer;
+    }
+    .card span .selected {
+        background-color: var(--text-color-black);
+        color: #fff;
     }
     .card .tags {
         display: flex;
