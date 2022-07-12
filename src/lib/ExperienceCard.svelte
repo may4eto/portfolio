@@ -43,4 +43,17 @@
         font-size: 14px;
         color: var(--text-color-grey);
     }
+    @media (max-width: 540px) {
+        .card .experience {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .card .experience img {
+            margin: 0 0 16px 0;
+        }
+        .card .experience span, .card .experience h3 {
+            text-align: center;
+        }
+    }
 </style>

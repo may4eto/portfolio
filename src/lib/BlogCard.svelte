@@ -16,7 +16,8 @@ export let blogData
 <style>
     .card h3 {
         font-size: 24px;
-        margin-top: 0;
+        margin-top: 8px;
+        line-height: 1.2;
     }
     .card h4 {
         font-size: 16px;

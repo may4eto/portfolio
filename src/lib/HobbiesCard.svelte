@@ -45,12 +45,12 @@
     }
     @media (max-width: 1024px) {
         .card {
-            margin-top: -52%;
+            margin-top: -53%;
         }
     }
     @media (max-width: 1007px) {
         .card .card-grid {
-            padding-bottom: 24px;
+            padding-bottom: 0px;
         }
     }
     @media (max-width: 986px) {
@@ -63,13 +63,16 @@
     }
     @media (max-width: 986px) {
         .card {
-            margin-top: 0%;
+            margin-top: -28%;
         }
         .card .card-grid {
-            padding-bottom: 24px;
+            padding-bottom: 32px;
         }
     }
     @media(max-width: 950px) {
+        .card {
+            margin-top: 0%;
+        }
         .card .card-grid .hobby-card .img {
             width: 100%;
             height: 280px;
