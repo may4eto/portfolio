@@ -12,6 +12,7 @@
   let blogData = []
   let filterTerm = ""
   let filteredProjects = []
+  let selected= ""
   onMount(async () => {
         const response = await fetch(
                 'https://dev.to/api/articles?username=may4eto',
@@ -24,26 +25,35 @@
   });
   //filter function
   const filterProjects = (event) => {
-    filterTerm = `${event.detail.text.trim()}`;
-    return filteredProjects = data.projects.filter(project => project.tags.includes(filterTerm))
+    filterTerm = `${event.detail.text.trim()}`
+    selected = event.detail.id
+    console.log(selected)
+    filteredProjects = data.projects.filter(project => project.tags.includes(filterTerm))
+  }
+  //clear filters
+  const clearFilters = () => {
+    filteredProjects = []
+    selected = ""
   }
 </script>
 
 {#if blogData}
-  <main>
-    <ProfileCard {data} />
-    <div class="intro">
-      <SkillsCard {data} />
-      <BlogCard {blogData} />
-      <HobbiesCard {data} />
-      <ExperienceCard {data} />
-    </div>
-    <div class="projects">
-      <ProjectsCard {filteredProjects} {data} on:filter={filterProjects} />
-      <ProjectGrid {data} {filteredProjects} />
-    </div>
-  </main>
-  <Footer />
+    <main>
+      <ProfileCard {data} />
+      <div class="intro">
+        <SkillsCard {data} />
+        <BlogCard {blogData} />
+        <HobbiesCard {data} />
+        <ExperienceCard {data} />
+      </div>
+      <div class="projects">
+        <ProjectsCard {data} {filteredProjects} {selected} on:filter={filterProjects} on:clear={clearFilters}/>
+        {#key filteredProjects}
+          <ProjectGrid {data} {filteredProjects} />
+        {/key}
+      </div>
+    </main>
+    <Footer />
 {:else}
   ...loading
 {/if}

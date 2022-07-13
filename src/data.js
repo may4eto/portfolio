@@ -79,7 +79,7 @@ export const data = {
       repo: "https://github.com/may4eto/book-club",
       description:
         "A responsive website fetching data from an external API and using React hooks and the styled-components library.",
-      tags: ["React", "HTML", "CSS"],
+      tags: ["React", "CSS"],
     },
     {
       name: "Zesty",
@@ -88,7 +88,7 @@ export const data = {
       repo: "https://codesandbox.io/s/zesty-t0dqh",
       description:
         "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS.",
-      tags: ["React", "HTML", "CSS"],
+      tags: ["React", "CSS"],
     },
     {
       name: "MilkyMood",
@@ -97,7 +97,7 @@ export const data = {
       repo: "https://codesandbox.io/s/milkymood-p03jo",
       description:
         "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
-      tags: ["React", "HTML", "CSS"],
+      tags: ["React", "CSS"],
     },
     {
       name: "Edie",

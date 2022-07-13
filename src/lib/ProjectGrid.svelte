@@ -16,6 +16,7 @@
     </div>
   {/each}
 </div>
+
 <div class="pagination">
     <LightPaginationNav
     totalItems="{items.length}"

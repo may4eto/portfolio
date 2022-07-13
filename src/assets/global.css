@@ -30,6 +30,11 @@ body {
   font-size: 24px;
 }
 
+.card span.selected {
+  background-color: var(--text-color-black);
+  color: #fff;
+}
+
 @media (max-width: 1024px) {
   body {
     padding: 24px;
