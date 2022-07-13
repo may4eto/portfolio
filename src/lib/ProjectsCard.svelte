@@ -31,7 +31,7 @@
     </div>
     <div class="tags">
         {#each uniqueTags as tag, index (index)}  
-            <span id={index.toString()} on:click = {onFilterProjects} class:selected="{selected === index.toString()}" class:show="{selected === index.toString()}">
+            <span id={index.toString()} on:click = {onFilterProjects} class:selected="{selected === index.toString()}">
                 {tag}
             </span>
         {/each}

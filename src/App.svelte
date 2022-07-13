@@ -27,7 +27,6 @@
   const filterProjects = (event) => {
     filterTerm = `${event.detail.text.trim()}`
     selected = event.detail.id
-    console.log(selected)
     filteredProjects = data.projects.filter(project => project.tags.includes(filterTerm))
   }
   //clear filters
