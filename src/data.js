@@ -79,7 +79,7 @@ export const data = {
       repo: "https://github.com/may4eto/book-club",
       description:
         "A responsive website fetching data from an external API and using React hooks and the styled-components library.",
-      tags: ["React", "CSS"],
+      tags: ["React", "API"],
     },
     {
       name: "Zesty",
@@ -90,15 +90,15 @@ export const data = {
         "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS.",
       tags: ["React", "CSS"],
     },
-    {
-      name: "MilkyMood",
-      image: "milkymood.png",
-      url: "https://milkymood.netlify.app",
-      repo: "https://codesandbox.io/s/milkymood-p03jo",
-      description:
-        "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
-      tags: ["React", "CSS"],
-    },
+    // {
+    //   name: "MilkyMood",
+    //   image: "milkymood.png",
+    //   url: "https://milkymood.netlify.app",
+    //   repo: "https://codesandbox.io/s/milkymood-p03jo",
+    //   description:
+    //     "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
+    //   tags: ["React", "CSS"],
+    // },
     {
       name: "Edie",
       image: "edie.png",
@@ -125,6 +125,15 @@ export const data = {
       description:
         "*DEMO STORE, NO ORDERS - password: superhi* <br> A multi-page Shopify custom theme",
       tags: ["Shopify", "CSS"],
+    },
+    {
+      name: "Random Quote",
+      image: "quote-generator.png",
+      url: "https://random-wisdom.netlify.app/",
+      repo: "https://github.com/may4eto/quote-generator",
+      description:
+        "A highly responsive Svelte app fetching the Go Quotes API to generate a random quote and search quotes by author",
+      tags: ["Svelte", "API"],
     },
   ],
 };
