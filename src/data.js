@@ -69,7 +69,6 @@ export const data = {
         "Various administrative, paralegal and policy support roles at EU institutions and agencies",
       image: "eu.png",
     },
-    // { dates: "2010-2013", role: "Project coordinator", description: "Funding and capacity building for NGOs", image: "osf.png" }
   ],
   projects: [
     {
@@ -90,15 +89,24 @@ export const data = {
         "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS.",
       tags: ["React", "CSS"],
     },
-    // {
-    //   name: "MilkyMood",
-    //   image: "milkymood.png",
-    //   url: "https://milkymood.netlify.app",
-    //   repo: "https://codesandbox.io/s/milkymood-p03jo",
-    //   description:
-    //     "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
-    //   tags: ["React", "CSS"],
-    // },
+    {
+      name: "Hangman",
+      image: "hangman.png",
+      url: "https://another-hangman-game.netlify.app/",
+      repo: "https://github.com/may4eto/hangman",
+      description:
+        "A React app imitating the popular game, fetching the Wordnik API and the lorem pixum library. Available also as a PWA.",
+      tags: ["React", "API", "Bootstrap"],
+    },
+    {
+      name: "MilkyMood",
+      image: "milkymood.png",
+      url: "https://milkymood.netlify.app",
+      repo: "https://codesandbox.io/s/milkymood-p03jo",
+      description:
+        "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
+      tags: ["React", "CSS"],
+    },
     {
       name: "Edie",
       image: "edie.png",
