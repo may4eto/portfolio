@@ -77,7 +77,7 @@ export const data = {
       url: "https://book-club-app.netlify.app",
       repo: "https://github.com/may4eto/book-club",
       description:
-        "A responsive website fetching data from an external API and using React hooks and the styled-components library.",
+        "A responsive website fetching data from an external API and using React hooks and the styled-components library",
       tags: ["React", "API"],
     },
     {
@@ -86,7 +86,7 @@ export const data = {
       url: "https://zesty.netlify.app",
       repo: "https://codesandbox.io/s/zesty-t0dqh",
       description:
-        "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS.",
+        "A responsive photography portfolio implementing a simple carrousel functionality with React hooks and CSS",
       tags: ["React", "CSS"],
     },
     {
@@ -95,7 +95,7 @@ export const data = {
       url: "https://another-hangman-game.netlify.app/",
       repo: "https://github.com/may4eto/hangman",
       description:
-        "A React app imitating the popular game, fetching the Wordnik API and the lorem pixum library. Available also as a PWA.",
+        "A React app imitating the popular game, fetching the Wordnik API and the lorem pixum library, available also as a PWA",
       tags: ["React", "API", "Bootstrap"],
     },
     {
@@ -104,7 +104,7 @@ export const data = {
       url: "https://milkymood.netlify.app",
       repo: "https://codesandbox.io/s/milkymood-p03jo",
       description:
-        "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries. ",
+        "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries",
       tags: ["React", "CSS"],
     },
     {
@@ -113,9 +113,18 @@ export const data = {
       url: "https://may4eto.github.io/edie-homepage/",
       repo: "https://github.com/may4eto/edie-homepage",
       description:
-        "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid.",
+        "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid",
       tags: ["HTML", "CSS"],
     },
+    // {
+    //   name: "Bien",
+    //   image: "bien.png",
+    //   url: "https://bien-restaurant-reviews.herokuapp.com/",
+    //   repo: "https://github.com/may4eto/bien",
+    //   description:
+    //     "A restaurant review app built on Rails and using AWS for image storage. Features include user authentication and basic CRUD.",
+    //   tags: ["Ruby on Rails", "SCSS", "AWS"],
+    // },
     {
       name: "Fitra",
       image: "fitra.png",
@@ -140,7 +149,7 @@ export const data = {
       url: "https://random-wisdom.netlify.app/",
       repo: "https://github.com/may4eto/quote-generator",
       description:
-        "A highly responsive Svelte app fetching the Go Quotes API to generate a random quote and search quotes by author",
+        "A highly responsive Svelte app fetching the Quotable API to generate a random quote and search quotes by author",
       tags: ["Svelte", "API"],
     },
   ],
