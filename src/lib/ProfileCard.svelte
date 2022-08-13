@@ -128,5 +128,9 @@
             margin-right: 0;
             width: 100%;
         }
+        .card .text .social a {
+            font-size: 40px;
+            margin: 0 16px 0 0;
+        }
     }
 </style>

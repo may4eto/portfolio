@@ -152,5 +152,14 @@ export const data = {
         "A highly responsive Svelte app fetching the Quotable API to generate a random quote and search quotes by author",
       tags: ["Svelte", "API"],
     },
+    {
+      name: "4th Kind",
+      image: "4thkind.png",
+      url: "https://4th-kind-47.superhi.com/",
+      repo: "https://codepen.io/may4eto/pen/oNqaXYN",
+      description:
+        "A minimalist investment company homepage using GSAP animation, inline SVGs and supporting light and dark mode",
+      tags: ["JavaScript", "SVG"],
+    },
   ],
 };
