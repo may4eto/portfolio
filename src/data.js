@@ -161,5 +161,14 @@ export const data = {
         "A minimalist investment company homepage using GSAP animation, inline SVGs and supporting light and dark mode",
       tags: ["JavaScript", "SVG"],
     },
+    {
+      name: "Population Densities",
+      image: "worldmap.png",
+      url: "https://population-densities-20.superhi.com/",
+      repo: "https://gist.github.com/may4eto/3e45e8664fbc2c78abf1a108293101b5",
+      description:
+        "An interactive map of the world showing a heat map of population densities and using the D3.js library and SVGs",
+      tags: ["JavaScript", "SVG"],
+    },
   ],
 };
