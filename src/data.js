@@ -110,8 +110,8 @@ export const data = {
     {
       name: "Edie",
       image: "edie.png",
-      url: "https://may4eto.github.io/edie-homepage/",
-      repo: "https://github.com/may4eto/edie-homepage",
+      url: "https://may4eto.github.io/edie/",
+      repo: "https://github.com/may4eto/edie",
       description:
         "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid",
       tags: ["HTML", "CSS"],
