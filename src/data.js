@@ -18,7 +18,7 @@ export const data = {
     { name: "Svelte", mastery: "40%" },
     { name: "React", mastery: "60%" },
     { name: "Vue", mastery: "40%" },
-    { name: "Angular", mastery: "60%" },
+    { name: "Angular", mastery: "40%" },
     { name: "UX/UI", mastery: "80%" },
   ],
   hobbies: [
