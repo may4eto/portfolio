@@ -73,7 +73,7 @@ export const data = {
   projects: [
     {
       name: "Book Club",
-      image: "bookclub.png",
+      image: "bookclub.jpg",
       url: "https://book-club-app.netlify.app",
       repo: "https://github.com/may4eto/book-club",
       description:
@@ -82,7 +82,7 @@ export const data = {
     },
     {
       name: "Zesty",
-      image: "zesty.png",
+      image: "zesty.jpg",
       url: "https://zesty.netlify.app",
       repo: "https://codesandbox.io/s/zesty-t0dqh",
       description:
@@ -91,7 +91,7 @@ export const data = {
     },
     {
       name: "Hangman",
-      image: "hangman.png",
+      image: "hangman.jpg",
       url: "https://another-hangman-game.netlify.app/",
       repo: "https://github.com/may4eto/hangman",
       description:
@@ -100,7 +100,7 @@ export const data = {
     },
     {
       name: "MilkyMood",
-      image: "milkymood.png",
+      image: "milkymood.jpg",
       url: "https://milkymood.netlify.app",
       repo: "https://codesandbox.io/s/milkymood-p03jo",
       description:
@@ -109,7 +109,7 @@ export const data = {
     },
     {
       name: "Edie",
-      image: "edie.png",
+      image: "edie.jpg",
       url: "https://may4eto.github.io/edie/",
       repo: "https://github.com/may4eto/edie",
       description:
@@ -118,25 +118,16 @@ export const data = {
     },
     {
       name: "Gradient generator",
-      image: "random-gradient.png",
+      image: "random-gradient.jpg",
       url:" https://may4eto.github.io/gradient-generator/",
       repo: "https://github.com/may4eto/gradient-generator",
       description:
         "A random gradient generator built with vanilla JavaScript, HTML and CSS with the possibility to export PNG",
       tags: ["HTML", "CSS", "JavaScript"],
     },
-    // {
-    //   name: "Bien",
-    //   image: "bien.png",
-    //   url: "https://bien-restaurant-reviews.herokuapp.com/",
-    //   repo: "https://github.com/may4eto/bien",
-    //   description:
-    //     "A restaurant review app built on Rails and using AWS for image storage. Features include user authentication and basic CRUD.",
-    //   tags: ["Ruby on Rails", "SCSS", "AWS"],
-    // },
     {
       name: "Fitra",
-      image: "fitra.png",
+      image: "fitra.jpg",
       url: "https://maya-mircheva-superhi-project-1.myshopify.com/",
       repo: "https://github.com/may4eto/fitra",
       description:
@@ -145,7 +136,7 @@ export const data = {
     },
     {
       name: "Wellby",
-      image: "wellby.png",
+      image: "wellby.jpg",
       url: "https://maya-mircheva-superhi-project-2.myshopify.com/",
       repo: "https://github.com/may4eto/wellby",
       description:
@@ -154,7 +145,7 @@ export const data = {
     },
     {
       name: "Random Quote",
-      image: "quote-generator.png",
+      image: "quote-generator.jpg",
       url: "https://random-wisdom.netlify.app/",
       repo: "https://github.com/may4eto/quote-generator",
       description:
@@ -163,7 +154,7 @@ export const data = {
     },
     {
       name: "4th Kind",
-      image: "4thkind.png",
+      image: "4thkind.jpg",
       url: "https://4th-kind-47.superhi.com/",
       repo: "https://codepen.io/may4eto/pen/oNqaXYN",
       description:
@@ -172,7 +163,7 @@ export const data = {
     },
     {
       name: "Population Densities",
-      image: "worldmap.png",
+      image: "worldmap.jpg",
       url: "https://population-densities-20.superhi.com/",
       repo: "https://gist.github.com/may4eto/3e45e8664fbc2c78abf1a108293101b5",
       description:
