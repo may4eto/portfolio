@@ -116,6 +116,15 @@ export const data = {
         "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid",
       tags: ["HTML", "CSS"],
     },
+    {
+      name: "Gradient generator",
+      image: "random-gradient.png",
+      url:" https://may4eto.github.io/gradient-generator/",
+      repo: "https://github.com/may4eto/gradient-generator",
+      description:
+        "A random gradient generator built with vanilla JavaScript, HTML and CSS with the possibility to export PNG",
+      tags: ["HTML", "CSS", "JavaScript"],
+    },
     // {
     //   name: "Bien",
     //   image: "bien.png",
