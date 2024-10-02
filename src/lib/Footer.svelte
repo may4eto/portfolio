@@ -1,6 +1,6 @@
-<div class="footer">
+<footer class="footer">
     <p>created by <a href="https://github.com/may4eto">may4eto</a> - devChallenges.io</p>
-</div>
+</footer>
 
 <style>
     .footer {

@@ -39,18 +39,18 @@
 {#if blogData}
     <main>
       <ProfileCard {data} />
-      <div class="intro">
+      <section class="intro">
         <SkillsCard {data} />
         <BlogCard {blogData} />
         <HobbiesCard {data} />
         <ExperienceCard {data} />
-      </div>
-      <div class="projects">
+      </section>
+      <section class="projects">
         <ProjectsCard {data} {filteredProjects} {selected} on:filter={filterProjects} on:clear={clearFilters}/>
         {#key filteredProjects}
           <ProjectGrid {data} {filteredProjects} />
         {/key}
-      </div>
+      </section>
     </main>
     <Footer />
 {:else}
@@ -59,7 +59,7 @@
 
 <style>
   @import '../src/assets/global.css';
-  div.intro {
+  section.intro {
     display: grid;
     grid-template-columns: 40fr 60fr;
     gap: 24px;
@@ -67,23 +67,23 @@
     align-items: start;
   }
   @media (max-width: 1024px) {
-    div.intro {
+    section.intro {
       gap: 16px;
     }
   }
   @media (max-width: 986px) {
-    div.intro {
+    section.intro {
       grid-template-columns: 50fr 50fr;
     }
   }
   @media (max-width: 950px) {
-    div.intro {
+    section.intro {
       grid-template-columns: 1fr;
       gap: 24px;
     }
   }
   @media (max-width: 375px) {
-    div.intro {
+    section.intro {
       gap: 16px;
       margin: 16px 0;
     }

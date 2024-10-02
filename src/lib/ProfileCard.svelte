@@ -2,7 +2,7 @@
     export let data
 </script>
 
-<div class="card profile">
+<header class="card profile">
     <figure>
         <img src="images/profile-image.jpg" alt="Maya Mircheva, Front-end developer" />
     </figure>
@@ -38,7 +38,7 @@
             {/each}
         </div>
     </div>  
-</div>
+</header>
 
 <style>
     .card {
