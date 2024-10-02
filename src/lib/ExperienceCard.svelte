@@ -32,6 +32,9 @@
     .card .experience:not(:last-child) {
         margin-bottom: 32px;
     }
+    .card .experience:last-child {
+        margin-bottom: 20px;
+    }
     .card .experience img {
         max-width: 100px;
         height: auto;
