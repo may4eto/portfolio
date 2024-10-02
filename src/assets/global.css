@@ -4,6 +4,19 @@
   --text-color-grey: #828282;
   --light-grey: #c4c4c4;
 }
+
+html {
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(1.6) contrast(60%);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
