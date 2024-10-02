@@ -43,32 +43,38 @@ export const data = {
   ],
   experiences: [
     {
-      dates: "2021-current",
+      dates: "2023-current",
       role: "Front-end developer",
-      description: "Development of a web application with Angular",
+      description: "Development of web applications with React",
+      image: "ibm.png",
+    },
+    {
+      dates: "2021-2023",
+      role: "Front-end developer",
+      description: "Development of web applications with Angular",
       image: "avanade.png",
     },
     {
       dates: "2020",
       role: "Full-stack developer",
       description:
-        "Development of a web application for a small retail client with Laravel and MySQL",
+        "Development of a web application with Laravel and MySQL",
       image: "nowhere.png",
     },
     {
       dates: "2020",
       role: "Web designer",
       description:
-        "Graphic and web design work in Adobe XD and Adobe Illustrator for various clients",
+        "Graphic and web design work in Adobe XD and Adobe Illustrator",
       image: "2create.png",
     },
-    {
-      dates: "2013-2019",
-      role: "Assistant",
-      description:
-        "Various administrative, paralegal and policy support roles at EU institutions and agencies",
-      image: "eu.png",
-    },
+    // {
+    //   dates: "2013-2019",
+    //   role: "Assistant",
+    //   description:
+    //     "Various administrative, paralegal and policy support roles at EU institutions and agencies",
+    //   image: "eu.png",
+    // },
   ],
   projects: [
     {
