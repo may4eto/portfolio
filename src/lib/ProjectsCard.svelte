@@ -20,9 +20,9 @@
     <div class="title">
         <h2>
             {#if filteredProjects.length > 0}
-                Projects <span class="projects-count">( {filteredProjects.length} )</span>
+                Projects <span class="badge"><span class="projects-count">{filteredProjects.length}</span></span>
             {:else}
-                Projects <span class="projects-count">( {data.projects.length} )</span>
+                Projects <span class="badge"><span class="projects-count">{data.projects.length}</span></span>
             {/if}
         </h2>
         {#if filteredProjects.length > 0}
@@ -74,6 +74,7 @@
         padding: 0;
     }
     .card .title h2 {
+        display: flex;
         margin-bottom: 12px;
     }
     .card .tags {
@@ -87,6 +88,22 @@
         margin: 8px 8px 0 0;
         display: inline-block;
         cursor: pointer;
+    }
+
+    span.badge {
+        background-color: var(--light-grey);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        padding: 8px;
+        border-radius: 50%;
+        margin-left: 8px;
+    }
+
+    span.projects-count {
+        font-size: 16px;
     }
 
     @media (max-width: 375px) {
