@@ -86,7 +86,8 @@
         height: auto;
         margin-right: 24px;
         border-radius: 12px;
-        filter: grayscale(100%) blur(0.25px) contrast(75%) brightness(1.1);
+        filter: grayscale(100%) blur(0.25px) contrast(33%) brightness(1.025);
+        mix-blend-mode: hard-light;
     }
     @media (max-width: 1024px) {
         .card .text .social {

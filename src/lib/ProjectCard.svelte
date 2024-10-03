@@ -36,6 +36,13 @@
         font-size: 16px;
         color: var(--text-color-grey);
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        line-clamp: 4;
+        -webkit-box-orient: vertical;
+
     }
     .card .links {
         margin-top: 32px;

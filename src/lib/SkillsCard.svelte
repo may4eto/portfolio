@@ -31,5 +31,10 @@
         height: 100%;
         border-radius: 12px;
     }
+    @media(min-width: 1024px) and (max-width: 1278px) {
+        .card .skill:last-child {
+            margin-bottom: 20px;
+        }
+    }
    
 </style>
