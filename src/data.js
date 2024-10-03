@@ -55,14 +55,14 @@ export const data = {
       image: "avanade.png",
     },
     {
-      dates: "2020",
+      dates: "2021",
       role: "Full-stack developer",
       description:
         "Development of a web application with Laravel and MySQL",
       image: "nowhere.png",
     },
     {
-      dates: "2020",
+      dates: "2021",
       role: "Web designer",
       description:
         "Graphic and web design work in Adobe XD and Adobe Illustrator",
