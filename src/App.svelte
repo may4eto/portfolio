@@ -60,7 +60,11 @@
       for(let y = 0; y < totalY; y = y + 1) {
         let n = p5.noise(x * nl, y * nl)
         let rn = n * density - p5.floor(n * density)
-        let c = p5.lerpColor(c1, c2, rn)
+        //let c = p5.lerpColor(c1, c2, rn)
+        let c = c2
+        if(rn > 0.75) {
+          c = c1
+        }
         p5.set(x, y, c)
       }
     }
