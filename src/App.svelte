@@ -47,8 +47,8 @@
 
   const sketch = (p5) => {
   p5.setup = () => {
-    nl = 0.01
-    density = 5
+    nl = 0.005
+    density = 10
     canvasHeight = htmlTag.scrollHeight
     canvasWidth = htmlTag.clientWidth
     totalX = canvasWidth
