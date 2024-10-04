@@ -54,13 +54,13 @@ export const data = {
       description: "Development of web applications with Angular",
       image: "avanade.png",
     },
-    {
-      dates: "2021",
-      role: "Full-stack developer",
-      description:
-        "Development of a web application with Laravel and MySQL",
-      image: "nowhere.png",
-    },
+    // {
+    // dates: "2021",
+    // role: "Full-stack developer",
+    // description:
+    //   "Development of a web application with Laravel and MySQL",
+    // image: "nowhere.png",
+    // },
     {
       dates: "2021",
       role: "Web designer",
@@ -68,13 +68,12 @@ export const data = {
         "Graphic and web design work in Adobe XD and Adobe Illustrator",
       image: "2create.png",
     },
-    // {
-    //   dates: "2013-2019",
-    //   role: "Assistant",
-    //   description:
-    //     "Various administrative, paralegal and policy support roles at EU institutions and agencies",
-    //   image: "eu.png",
-    // },
+    {
+      dates: "2013-2019",
+      role: "Assistant",
+      description: "Various administrative, paralegal and policy support roles at EU institutions and agencies",
+      image: "eu.png",
+    },
   ],
   projects: [
     {
