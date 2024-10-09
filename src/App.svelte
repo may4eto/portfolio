@@ -149,7 +149,7 @@
             isReady.update((isReady) => isReady = true)
             p5.noCanvas()
             fetchData()
-          }, 4000)
+          }, 5000)
           clearTimeout(0)
         }
       }
