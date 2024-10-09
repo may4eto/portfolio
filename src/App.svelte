@@ -114,7 +114,7 @@
         draw() {
           this.move()
           let alpha = 255 - 255 * easing(this.time)
-          p5.textSize(160)
+          htmlTag.clientWidth < 768 ? p5.textSize(80) : p5.textSize(160)
           p5.fill(255, 255, 255, alpha)
           p5.noStroke()
           p5.textFont("Montserrat")
@@ -140,7 +140,7 @@
         }
       function writeWord() {
         let choice = wordList[wordNum]  
-        let w = new Word(p5.random(htmlTag.clientWidth / 2 - 100, htmlTag.clientWidth / 2 + 100), htmlTag.clientHeight / 2, choice)
+        let w = new Word(p5.random(htmlTag.clientWidth / 2 - 50, htmlTag.clientWidth / 2 + 50), htmlTag.clientHeight / 2, choice)
         words.push(w)
         wordNum = wordNum + 1
         setTimeout(writeWord, 700);
