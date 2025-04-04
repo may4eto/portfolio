@@ -71,7 +71,8 @@ export const data = {
     {
       dates: "2013-2019",
       role: "Assistant",
-      description: "Various administrative, paralegal and policy support roles at EU institutions and agencies",
+      description:
+        "Various administrative, paralegal and policy support roles at EU institutions and agencies",
       image: "eu.png",
     },
   ],
@@ -112,19 +113,28 @@ export const data = {
         "A landing page for an indie album pre-release using React hooks, Formik and the styled-components libraries",
       tags: ["React", "CSS"],
     },
+    // {
+    //   name: "Edie",
+    //   image: "edie.jpg",
+    //   url: "https://may4eto.github.io/edie/",
+    //   repo: "https://github.com/may4eto/edie",
+    //   description:
+    //     "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid",
+    //   tags: ["HTML", "CSS"],
+    // },
     {
-      name: "Edie",
-      image: "edie.jpg",
-      url: "https://may4eto.github.io/edie/",
-      repo: "https://github.com/may4eto/edie",
+      name: "Super Shapes",
+      image: "super-shapes.jpg",
+      url: "https://super-shapes.netlify.app/",
+      repo: "https://github.com/may4eto/super-shapes",
       description:
-        "A static responsive business home page created with HTML and CSS exploring different styles of CSS grid",
-      tags: ["HTML", "CSS"],
+        "A visual playground Vue app showing a grid of JavaScript animations using the p2.js and p5.js libraries",
+      tags: ["Vue", "JavaScript"],
     },
     {
       name: "Gradient generator",
       image: "random-gradient.jpg",
-      url:" https://may4eto.github.io/gradient-generator/",
+      url: "https://may4eto.github.io/gradient-generator/",
       repo: "https://github.com/may4eto/gradient-generator",
       description:
         "A random gradient generator built with vanilla JavaScript, HTML and CSS with the possibility to export PNG",
@@ -174,6 +184,15 @@ export const data = {
       description:
         "An interactive map of the world showing a heat map of population densities and using the D3.js library and SVGs",
       tags: ["JavaScript", "SVG"],
+    },
+    {
+      name: "Coffee House",
+      image: "coffee-house.jpg",
+      url: "https://my-coffee-house.netlify.app/",
+      repo: "https://github.com/may4eto/coffee-house",
+      description:
+        "A homepage for a high end coffee house done in Vue with a flexible, fully responsive layout and a simple filter functionality",
+      tags: ["Vue", "CSS"],
     },
   ],
 };
