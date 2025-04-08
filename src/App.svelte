@@ -10,6 +10,7 @@
   import ProjectGrid from './lib/ProjectGrid.svelte';
   import Footer from './lib/Footer.svelte'
   import P5 from 'p5-svelte';
+  import { onMount } from 'svelte';
 
   const isReady = writable()
   // Check if we've shown the animation before
@@ -54,44 +55,9 @@
 
   const htmlTag = document.querySelector("html")
 
-  // Subscribe to isReady changes
-  isReady.subscribe(value => {
-    _isReady = value
-    // If we're immediately setting to ready (skipping animation), fetch the data right away
-    if (value === true && hasSeenAnimation) {
-      fetchData()
-    }
-    if (value) {
-    sketch = (p5) => {
-      p5.setup = () => {
-        nl = 0.0025
-        density = 5
-        canvasHeight = htmlTag.scrollHeight
-        canvasWidth = htmlTag.clientWidth
-        totalX = canvasWidth
-        totalY = canvasHeight
-        let c1 = p5.color("#c4c4c4")
-        let c2 = p5.color("#828282")
-        p5.createCanvas(canvasWidth, canvasHeight)
-        for(let x = 0; x < totalX; x = x + 1 ) {
-          for(let y = 0; y < totalY; y = y + 1) {
-            let n = p5.noise(x * nl, y * nl)
-            let rn = n * density - p5.floor(n * density)
-            //let c = p5.lerpColor(c1, c2, rn)
-            let c = c2
-            if(rn > 0.75) {
-              c = c1
-            }
-            p5.set(x, y, c)
-          }
-        }
-        p5.updatePixels()
-      }
-      return sketch
-    }
-  } else {
-    // splash screen 
-    sketch = (p5) => {
+  const initSplashScreen = () => {
+     // splash screen 
+     sketch = (p5) => {
       let easing = function (t) { return t*t*t }
       class Word {
         constructor(x, y, text) {
@@ -160,6 +126,65 @@
       }
       return sketch
     }
+  }
+
+  const setBackgroundPattern = () => {
+    sketch = (p5) => {
+      p5.setup = () => {
+        nl = 0.0025
+        density = 5
+        canvasHeight = htmlTag.scrollHeight
+        canvasWidth = htmlTag.clientWidth
+        totalX = canvasWidth
+        totalY = canvasHeight
+        let c1 = p5.color("#c4c4c4")
+        let c2 = p5.color("#828282")
+        p5.createCanvas(canvasWidth, canvasHeight)
+        for(let x = 0; x < totalX; x = x + 1 ) {
+          for(let y = 0; y < totalY; y = y + 1) {
+            let n = p5.noise(x * nl, y * nl)
+            let rn = n * density - p5.floor(n * density)
+            //let c = p5.lerpColor(c1, c2, rn)
+            let c = c2
+            if(rn > 0.75) {
+              c = c1
+            }
+            p5.set(x, y, c)
+          }
+        }
+        p5.updatePixels()
+      }
+      return sketch
+    }
+  }
+
+  onMount(() => {
+    if (!hasSeenAnimation) {
+      // Use the Font Loading API to load the Montserrat font
+      const fontPromise = document.fonts.load('160px Montserrat');
+     
+      fontPromise.then(() => {
+        // Font has loaded, now start the animation
+        initSplashScreen();
+        // Need to trigger a redraw or re-render here
+        isReady.update(v => v); // Trigger a reactive update
+      })
+    } else {
+      setBackgroundPattern()
+    }
+  });
+
+  // Subscribe to isReady changes
+  isReady.subscribe(value => {
+    _isReady = value
+    // If we're immediately setting to ready (skipping animation), fetch the data right away
+    if (value === true && hasSeenAnimation) {
+      fetchData()
+    }
+    if (value) {
+      setBackgroundPattern()
+  } else {
+   initSplashScreen()
   }
   })
 </script>
