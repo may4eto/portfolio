@@ -12,11 +12,11 @@
   import P5 from 'p5-svelte';
 
   const isReady = writable()
-  isReady.set(false) 
+  // Check if we've shown the animation before
+  const hasSeenAnimation = localStorage.getItem('hasSeenAnimation') === 'true'
+  // Set isReady based on whether we've seen the animation
+  isReady.set(hasSeenAnimation)
   let _isReady
-  isReady.subscribe((value) => {
-    _isReady = value
-  });
   let blogData = []
   let filterTerm = ""
   let filteredProjects = []
@@ -26,7 +26,6 @@
     const data = await response.json()
     blogData = data[0]
   })
-  //onMount(fetchData);
 
   //filter function
   const filterProjects = (event) => {
@@ -55,7 +54,13 @@
 
   const htmlTag = document.querySelector("html")
 
+  // Subscribe to isReady changes
   isReady.subscribe(value => {
+    _isReady = value
+    // If we're immediately setting to ready (skipping animation), fetch the data right away
+    if (value === true && hasSeenAnimation) {
+      fetchData()
+    }
     if (value) {
     sketch = (p5) => {
       p5.setup = () => {
@@ -88,7 +93,6 @@
     // splash screen 
     sketch = (p5) => {
       let easing = function (t) { return t*t*t }
-
       class Word {
         constructor(x, y, text) {
           let randomAngle = p5.random(-0.25 * p5.PI, 0.25 * p5.PI)
@@ -122,7 +126,6 @@
           p5.text(this.text, this.position.x, this.position.y)
         }
       }
-
       p5.setup = () => {
         p5.createCanvas(htmlTag.clientWidth, htmlTag.clientHeight)
         words = []
@@ -147,6 +150,8 @@
         if (wordNum === wordList.length - 1) {
           setTimeout(() => {
             isReady.update((isReady) => isReady = true)
+            // Save to localStorage that we've seen the animation
+            localStorage.setItem('hasSeenAnimation', 'true')
             p5.noCanvas()
             fetchData()
           }, 4000)
