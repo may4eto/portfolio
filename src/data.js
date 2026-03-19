@@ -3,6 +3,7 @@ export const data = {
   role: "Front-end developer",
   email: "maya.p.mircheva@gmail.com",
   telephone: "+39 351 664 31 82",
+  cv: "maya-mircheva-cv.pdf",
   description:
     "A multidisciplinary creative skilled in project management, graphic design, web design and web development. Experienced in working in an international environment. Passionate about using technology and design for making the world a better place. A wannabe artist. Multilingual. Lifelong learner.",
   socials: [
