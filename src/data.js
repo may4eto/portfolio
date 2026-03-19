@@ -11,6 +11,7 @@ export const data = {
     { name: "github", url: "https://github.com/may4eto" },
     { name: "dribbble", url: "https://dribbble.com/maya_mircheva" },
     { name: "behance", url: "https://www.behance.net/maya516592f0b9" },
+    { name: "instagram", url: "https://www.instagram.com/mirchevamaya/" },
   ],
   skills: [
     { name: "HTML", mastery: "80%" },

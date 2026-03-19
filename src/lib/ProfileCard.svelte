@@ -14,36 +14,40 @@
             </div>
             <div class="contacts">
                 <p>
-                    <span class="material-symbols-rounded">mail</span> 
+                    <span class="material-symbols-rounded">mail</span>
                     <span>{data.email}</span>
                 </p>
                 <p>
-                    <span class="material-symbols-rounded">call</span> 
+                    <span class="material-symbols-rounded">call</span>
                     <span>{data.telephone}</span>
                 </p>
             </div>
-        </div>   
-        <p class="description">{data.description}</p> 
+        </div>
+        <p class="description">{data.description}</p>
         <div class="social">
-            {#each data.socials as social}
-                {#if social.name === "linkedin"}
-                    <a href="{social.url}" target="_blank">
-                        <i class="fab fa-{social.name}"></i>
-                    </a>
-                {:else}
-                    <a href="{social.url}" target="_blank">
-                        <i class="fab fa-{social.name}-square"></i>
+            <div>
+                {#each data.socials as social}
+                    {#if social.name === "linkedin"}
+                        <a href="{social.url}" target="_blank">
+                            <i class="fab fa-{social.name}"></i>
+                        </a>
+                    {:else}
+                        <a href="{social.url}" target="_blank">
+                            <i class="fab fa-{social.name}-square"></i>
+                        </a>
+                    {/if}
+                {/each}
+            </div>
+            <div>
+                {#if data.cv}
+                    <a href={data.cv} download class="cv-button">
+                        <span class="material-symbols-rounded">download</span>
+                        Download CV
                     </a>
                 {/if}
-            {/each}
-            {#if data.cv}
-                <a href={data.cv} download class="cv-button">
-                    <span class="material-symbols-rounded">download</span>
-                    Download CV
-                </a>
-            {/if}
+            </div>
         </div>
-    </div>  
+    </div>
 </header>
 
 <style>
@@ -79,6 +83,29 @@
     .card .text p.description {
         color: var(--text-color-grey);
     }
+
+    .card .text .social {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    a.cv-button {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--text-color-black);
+        font-weight: 500;
+        font-size: 14px !important;
+    }
+
+    a.cv-button .material-symbols-rounded {
+        position: relative;
+        top: 4px;
+    }
+
     .card .text .social a {
         position: relative;
         text-decoration: none;
@@ -141,4 +168,12 @@
             margin: 0 16px 0 0;
         }
     }
+     @media(max-width: 475px) {
+        .card .text .social {
+            display: block;
+        }
+        a.cv-button {
+            font-size: 16px !important;
+        }
+     }
 </style>
