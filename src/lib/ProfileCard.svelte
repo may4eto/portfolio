@@ -36,6 +36,12 @@
                     </a>
                 {/if}
             {/each}
+            {#if data.cv}
+                <a href={data.cv} download class="cv-button">
+                    <span class="material-symbols-rounded">download</span>
+                    Download CV
+                </a>
+            {/if}
         </div>
     </div>  
 </header>
