@@ -85,7 +85,7 @@ export const data = {
       url: "https://book-club-app.netlify.app",
       repo: "https://github.com/may4eto/book-club",
       description:
-        "A responsive website fetching data from an external API and using React hooks and the styled-components library",
+        "A responsive website fetching data from the Google Books API and using React hooks and the styled-components library",
       tags: ["React", "API"],
     },
     {
